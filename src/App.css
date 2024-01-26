@@ -1,12 +1,61 @@
 .App {
-  text-align: center;
+  text-align:left;
+  display: flex;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item {
+ margin: 20px;
+ background-color: rgba(210, 207, 207, 0.7);
 }
 
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+.dish {
+  margin: 15px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.categories {
+  margin: 15px;
+  padding: 15px;
+}
+h1 {
+  font-family: 'RocknRoll One', sans-serif;
+  margin: 5px;
+}
+.logo {
+  width: 90px;
+  margin-left: 45px;
+}
+.categoryButtonSelected {
+  background-color: 
+  #ee2022;
+  margin-top: 20px;
+}
+.categoryButton:hover {
+  background-color: #fd4858;
+}
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+.btn {
+  margin-left:15px;
+  margin-bottom: 20px;
+}
+.icon {
+  width: 35px;
+  padding: 5px;
+  margin: 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
