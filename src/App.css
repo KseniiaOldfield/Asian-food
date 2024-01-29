@@ -1,37 +1,57 @@
-.App {
-  text-align:left;
-  display: flex;
-  padding: 20px;
-}
-
-.item {
- margin: 20px;
- background-color: rgba(210, 207, 207, 0.7);
-}
-
 body {
   background-image: url(bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  
+}
+.App {
+  display: flex;
+  padding: 5px;
+}
+.nav-item {
+  width: auto;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(210, 207, 207, 0.7);
+  font-weight:600;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 20px;
+}
+ul, a {
+  display: flex;
+  margin: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #0e0e0e;
+}
+.tokyo {
+  font-size: 20px;
+  margin-top: 7px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.item {
+  margin: 15px;
+  background-color: rgba(210, 207, 207, 0.7);
 }
 .dish {
   margin: 15px;
-  font-family: 'RocknRoll One', sans-serif;
-}
+  color: #0e0e0e;
+  font-size: 20px;
+  }
 .categories {
   margin: 15px;
   padding: 15px;
 }
-h1 {
-  font-family: 'RocknRoll One', sans-serif;
-  margin: 5px;
-}
 .logo {
-  width: 90px;
-  margin-left: 45px;
+  width: 95px;
+  margin-left: 15px;
 }
 .categoryButtonSelected {
   background-color: 
@@ -47,14 +67,37 @@ h1 {
   padding: 5px;
   margin-top: 20px;
 }
-.btn {
+.boxBtn {
   margin-left:15px;
+}
+.btn {
   margin-bottom: 20px;
+  border: 1px solid;
+  font-size: 16px;
+  padding-top: 3px;
 }
 .icon {
-  width: 35px;
-  padding: 5px;
-  margin: 5px;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+.del {
+  width: 20px;
+  margin-left: 40px;
+}
+.quantity {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background-color: #fff;
+  padding-inline: 5px;
+  padding-bottom: 1px;
+}
+.total {
+  margin-left: 4px;
+  color: #0e0e0e;
+}
+.basket {
+  margin: 15px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -84,4 +127,34 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+@media all and (max-width: 600px){
+  .icon {
+    width: 40px;
+    padding: 0px;
+    margin-left: 5px;
+  }
+  .logo {
+    width: 95px;
+    margin-left: 10px;
+  }
+  .item {
+    margin: 3px;
+  }
+  .tokyo {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 280px){
+  .item {
+    margin: 0px;
+  }
+  .logo {
+    width: 65px;
+    margin-left: 0px;
+  }
+  p {
+    font-size: 10px;
+  }
+
 }

@@ -5,7 +5,7 @@ export const dishChoice = createSlice({
     initialState: {
         selectedCategory: "APPETISERS"
     },
-    redycers: {
+    reducers: {
         filterCategory: (state, action) => {
             state.selectedCategory = action.payload;
         }
