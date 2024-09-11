@@ -14,8 +14,8 @@ function App() {
       </a>
 
       <ul className="">
-        <li className=""><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li className=""><a href="#" class="nav-link">About</a></li>
+        <li className=""><a href="#" className="nav-link active" aria-current="page">Home</a></li>
+        <li className=""><a href="#" className="nav-link">About</a></li>
       </ul>
     </header>  
   </div>
