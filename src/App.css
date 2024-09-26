@@ -95,6 +95,7 @@ ul, a {
 .total {
   margin-left: 4px;
   color: #0e0e0e;
+  padding: 1px;
 }
 .basket {
   margin: 15px;
@@ -143,6 +144,9 @@ ul, a {
   }
   .tokyo {
     font-size: 16px;
+  }
+  .total {
+    font-size: 13px;
   }
 }
 @media all and (max-width: 280px){

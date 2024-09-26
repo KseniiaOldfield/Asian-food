@@ -5,8 +5,7 @@ const Categories=() => {
     <div>
     <img className="logo" src="https://cdn-icons-png.freepik.com/256/9438/9438842.png?ga=GA1.2.171460617.1695459402&semt=ais" alt="chopsticks"/>
     {['APPETISERS', 'NOODLES', 'SALADS', 'RICE DISHES', 'SOUP', 'ALL']
-    .map((category, index) => <Filter key={index} category={category}/>
-    )}
+    .map(category => <Filter key={category.id} category={category}/>)}
     </div>)
 }
 export default Categories;
